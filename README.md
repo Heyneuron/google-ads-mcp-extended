@@ -1,4 +1,4 @@
-# Google Ads MCP Server (Experimental)
+# Google Ads MCP Server
 
 This repo contains the source code for running a local
 [MCP](https://modelcontextprotocol.io) server that interacts with the
