@@ -1,7 +1,10 @@
 {
   "tools": [
     {
-      "description": "Retrieves the selectable, filterable, and sortable fields for a specific Google Ads resource.\n\nUse this tool to find out which fields you can select, filter by, or sort by\nwhen querying a specific resource (e.g., 'campaign', 'ad_group').\nDo not guess fields, you MUST use this tool to discover them.\n\nArgs:\n    resource_name: The name of the Google Ads resource (e.g., 'campaign', 'ad_group').\n",
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "Retrieves the selectable, filterable, and sortable fields for a specific Google Ads resource.\n\nUse this tool to find out which fields you can select, filter by, or sort by\nwhen querying a specific resource (e.g., 'campaign', 'ad_group').\nDo not guess fields, you MUST use this tool to discover them.\n\nThe responses of this tool should be cached, as they don't change frequently.\n\nArgs:\n    resource_name: The name of the Google Ads resource (e.g., 'campaign', 'ad_group').\n",
       "inputSchema": {
         "properties": {
           "resource_name": {
