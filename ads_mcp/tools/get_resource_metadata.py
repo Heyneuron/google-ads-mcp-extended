@@ -20,7 +20,7 @@ from mcp.types import ToolAnnotations
 import ads_mcp.utils as utils
 
 
-@mcp.tool(annotations=ToolAnnotations(readOnlyHint=True, cacheControl=CacheControl(maxAge=3600)))
+@mcp.tool(annotations=ToolAnnotations(readOnlyHint=True))
 def get_resource_metadata(resource_name: str) -> Dict[str, Any]:
     """Retrieves the selectable, filterable, and sortable fields for a specific Google Ads resource.
 
