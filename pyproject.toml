@@ -1,6 +1,6 @@
 [project]
-name = "google-ads-mcp"
-version = "0.0.1"
+name = "google-ads-mcp-extended"
+version = "0.1.0"
 requires-python = ">=3.10"
 license = "Apache-2.0"
 dependencies = [
@@ -9,14 +9,17 @@ dependencies = [
     "fastmcp>=3.2.0"
 ]
 
-description = "MCP Server for Google Ads, depends on Google Ads API."
+description = "Extended Google Ads MCP Server with write operations, safety guardrails, and audit logging. Fork of googleads/google-ads-mcp by HeyNeuron."
 readme = "README.md"
-authors = [{ name = "Dean Lukies", email = "lukiesd@users.noreply.github.com" }]
-keywords = ["Google Ads", "Google Ads API", "MCP"]
+authors = [
+    { name = "HeyNeuron", email = "kontakt@biggrowth.pl" }
+]
+keywords = ["Google Ads", "Google Ads API", "MCP", "HeyNeuron", "PPC", "write operations"]
 classifiers = [
     "Intended Audience :: Developers",
     "Intended Audience :: End Users/Desktop",
-    "Programming Language :: Python"
+    "Programming Language :: Python",
+    "License :: OSI Approved :: Apache Software License"
 ]
 
 [project.optional-dependencies]
@@ -26,9 +29,10 @@ dev = [
 ]
 
 [project.urls]
-homepage = "https://github.com/googleads/google-ads-mcp"
-repository = "https://github.com/googleads/google-ads-mcp.git"
-issues = "https://github.com/googleads/google-ads-mcp/issues"
+homepage = "https://github.com/Heyneuron/google-ads-mcp-extended"
+repository = "https://github.com/Heyneuron/google-ads-mcp-extended.git"
+issues = "https://github.com/Heyneuron/google-ads-mcp-extended/issues"
+upstream = "https://github.com/googleads/google-ads-mcp"
 
 [project.scripts]
 google-ads-mcp = "ads_mcp.server:run_server"

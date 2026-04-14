@@ -28,6 +28,11 @@ from ads_mcp.resources import (
     segments,
 )  # noqa: F401
 
+# HeyNeuron extensions: write operations, safety guardrails, audit logging.
+# Registers campaigns, keywords, ads, and assets tools with the FastMCP
+# coordinator via the shared ``mcp`` singleton.
+from ads_mcp import heyneuron  # noqa: F401
+
 
 import os
 
